@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "733136830738",
+    "firebase_url": "https://loginapp-8e1bb.firebaseio.com",
+    "project_id": "loginapp-8e1bb",
+    "storage_bucket": "loginapp-8e1bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733136830738:android:5ee91c27101cb991",
+        "android_client_info": {
+          "package_name": "com.login.aimware.loginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733136830738-tbmnbr6jko5po29h115rdke8u3scegds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU0ovuOQ6Fx5PlrolQKOJk1lQwcUGGAqE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
