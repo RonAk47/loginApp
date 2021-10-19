@@ -31,7 +31,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private EditText userAge;
     private ImageView userProfilePic;
-    String email, name, age, password;
+    private String email, name, age, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +46,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 if(validate())
                 {
                     //If true then upload data to database
-                    String userEmail = user_email.getText().toString().trim();
-                    String userPass = user_password.getText().toString().trim();
+                    private String userEmail = user_email.getText().toString().trim();
+                    private String userPass = user_password.getText().toString().trim();
                     firebaseAuth.createUserWithEmailAndPassword(userEmail,userPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -89,20 +89,20 @@ public class RegistrationActivity extends AppCompatActivity {
     }
     private boolean validate()
     {
-        boolean result = false;
+        //boolean result = false;
         name = user_name.getText().toString();
         email = user_email.getText().toString();
         password = user_password.getText().toString();
         age = userAge.getText().toString();
         if(name.isEmpty() || email.isEmpty() || password.isEmpty() || age.isEmpty())
         {
-            Toast.makeText(this,"Please Enter all the details",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Required fields are missing, please fill all the details to continue.",Toast.LENGTH_SHORT).show();
         }
         else
         {
-            result = true;
+            return true;
         }
-        return result;
+        return false;
     }
     private void sendEmailVerification()
     {
