@@ -3,9 +3,9 @@ package com.login.aimware.loginapp;
 
 public class UserProfile {
 
-    public String userAge;
-    public String userEmail;
-    public String userName;
+    private String userAge;
+    private String userEmail;
+    private String userName;
 
     public UserProfile(){
     }
