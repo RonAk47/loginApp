@@ -91,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
                         //startActivity(new Intent(MainActivity.this, SecondActivity.class));
                         checkEmailVerification();
                     } else {
-                        Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                        
+                        Toast.makeText(MainActivity.this, "Login Failed ,Please Try again!", Toast.LENGTH_SHORT).show();
                         //counter--;  perform operation while setting the text.
                         Info.setText("No of attempts remaining: " + counter--);
                         progressDialog.dismiss();
