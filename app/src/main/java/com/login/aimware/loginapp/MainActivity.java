@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(this,"Verify Your Email",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Please Verify Your Email Address",Toast.LENGTH_SHORT).show();
             firebaseAuth.signOut();
         }
     }
