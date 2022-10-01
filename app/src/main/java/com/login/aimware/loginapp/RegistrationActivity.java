@@ -96,7 +96,7 @@ public class RegistrationActivity extends AppCompatActivity {
         age = userAge.getText().toString();
         if(name.isEmpty() || email.isEmpty() || password.isEmpty() || age.isEmpty())
         {
-            Toast.makeText(this,"Required fields are missing, please fill all the details to continue.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Some Required fields are missing, please fill all the details to continue.",Toast.LENGTH_SHORT).show();
         }
         else
         {
